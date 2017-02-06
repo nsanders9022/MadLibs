@@ -18,6 +18,8 @@ namespace MadLibs
         myStoryVariables.SetExclamation(Request.Query["exclamation"]);
         myStoryVariables.SetVerb(Request.Query["verb"]);
         myStoryVariables.SetNoun(Request.Query["noun"]);
+        myStoryVariables.SetNoun2(Request.Query["noun2"]);
+        myStoryVariables.SetVerb2(Request.Query["verb2"]);
         return View["story.cshtml", myStoryVariables];
       };
     }
